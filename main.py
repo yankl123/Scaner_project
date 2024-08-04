@@ -5,7 +5,7 @@ import camera
 from time import sleep
 
 while True :
-    print("Waitig for nfc triger :")
+    print("Waitig for nfc trigger :")
     tagUid = nfc.scanNfc() 
     if tagUid :
         print(tagUid)
