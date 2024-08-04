@@ -5,6 +5,7 @@ import camera
 from time import sleep
 
 while True :
+    print("Waitig for nfc triger :")
     tagUid = nfc.scanNfc() 
     if tagUid :
         print(tagUid)
@@ -12,4 +13,4 @@ while True :
         if image :
             print(image) 
             led.ledFlash(17,0.5,10) 
-    sleep(0.5)
+    sleep(0.2)
